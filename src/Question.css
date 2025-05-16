@@ -1,0 +1,76 @@
+input[type="radio"] {
+    display: none;
+}
+
+h4 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0 0 .75em 0;
+}
+
+/* Стили для label, чтобы он выглядел как кнопка */
+label {
+    display: inline;
+    color: #293264;
+    width: fit-content;
+    align-self: center;
+    text-wrap: nowrap;
+    padding: 10px 20px;
+    margin: 0;
+    font-size: .75rem;
+    background-color: transparent;
+    border-radius: 15px;
+    border: 1px solid #4D5B9E;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    text-align: center;
+}
+
+/* Изменение цвета кнопки, когда радиокнопка выбрана */
+input[type="radio"]:checked + label {
+    background-color: #D6DBF5;
+    border: none;
+}
+
+/* Стили при наведении */
+label:hover {
+    background-color: #D6DAF5;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px
+}
+
+section {
+    margin-right: auto;
+    width: 100%;
+}
+
+.horizontal-line {
+    margin: 15px 0;
+    width: 100%;
+    border: 1px solid #DBDEF0;
+}
+
+.right, .right:hover {
+    background: #94D7A2;
+    border: none;
+    cursor: not-allowed;
+}
+
+.wrong, .wrong:hover {
+    background: #F8BCBC;
+    color: gray;
+    border: none;
+    cursor: not-allowed;
+}
+
+.neutral, .neutral:hover {
+    background-color: transparent;
+    border-color: gray;
+    color: gray;
+    cursor: not-allowed;
+}

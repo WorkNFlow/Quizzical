@@ -1,0 +1,57 @@
+.main-page {
+    background-color: #F5F7FB;
+    background-image: url("../public/main-bg.jpg");
+    background-size: cover;
+    overflow-y: auto;
+    width: 100vw;
+    min-height: 100vh;
+    padding: 40px 75px 75px 75px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.check-btn {
+    background: #4D5B9E;
+    color: #F5F7FB;
+    font-size: .75rem;
+    padding: 1em 2em;
+}
+
+.check-btn:disabled {
+    background-color: gray;
+    cursor: not-allowed;
+}
+
+.check-btn:disabled:active{
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+
+h2 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5rem;
+}
+
+footer > p {
+    margin: 0 1em 0 0;
+    color: #293264;
+    font-size: 1rem;
+}
+
+@media (max-aspect-ratio: 1) {
+    .main-page {
+        padding: 2rem;
+    }
+}

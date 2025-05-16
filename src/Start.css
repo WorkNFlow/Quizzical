@@ -1,0 +1,45 @@
+.start-page {
+    background-color: #F5F7FB;
+    background-image: url("../public/start-bg.jpg");
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.start-page h1 {
+    margin: 0 0 0 0;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.start-page .description {
+    font-size: 1rem;
+    font-weight: 400;
+    margin: .75em 0 1.75em 0;
+}
+
+main button {
+    margin: 0;
+    background: #4D5B9E;
+    color: #F5F7FB;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 1em 3.3em;
+    border: none;
+    border-radius: 1em;
+    cursor: pointer;
+}
+
+main button:hover {
+    background-color: #4D5BC0;
+}
+
+main button:active {
+    -webkit-box-shadow: inset 0px 0px 7px #202020;
+    -moz-box-shadow: inset 0px 0px 7px #202020;
+    box-shadow: inset 0px 0px 7px #202020;
+}
